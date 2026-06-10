@@ -183,7 +183,9 @@ feature_names = ['RevolvingUtilizationOfUnsecuredLines',
 
 
 predict_button = st.button(
-    "🔍 Assess credit Risk"
+    "🔍 Assess credit Risk",
+    type="secondary",
+    use_container_width=True
    
 )
 
