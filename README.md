@@ -194,12 +194,6 @@ This approach aligns better with real-world lending scenarios where missing a de
 
 ---
 
-### Customer Risk Report
-
-![Report](screenshots/report.png)
-
----
-
 ## 📁 Project Structure
 
 ```text
