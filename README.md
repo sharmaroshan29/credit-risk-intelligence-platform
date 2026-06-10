@@ -184,13 +184,13 @@ This approach aligns better with real-world lending scenarios where missing a de
 
 ### Home Page
 
-![Homepage](screenshots/homepage.png)
+![Homepage](screenshots/Homepage.png)
 
 ---
 
 ### Risk Prediction
 
-![Prediction](screenshots/prediction.png)
+![Prediction](screenshots/Risk_Gauge.png)
 
 ---
 
