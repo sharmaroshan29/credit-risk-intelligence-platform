@@ -22,7 +22,7 @@ This platform:
 
 ## 🚀 Live Demo
 
-Coming Soon (Streamlit Deployment)
+[Credit Risk Intelligence Plateform](https://credit-risk-intelligence-platform-b83k4j8rymjgm8aljsjifn.streamlit.app/)
 
 ---
 
