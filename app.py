@@ -394,37 +394,42 @@ elif page == "📋 Customer Risk Report":
     else:
         st.subheader("📌 Executive Summary")
         st.divider()
-        st.subheader("👤 Borrower Snapshot")
-        st.write(
-            f"Name: {st.session_state['name']}"
-        )
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.subheader("👤 Borrower Snapshot")
+            st.write(
+                f"Name: {st.session_state['name']}"
+            )
 
-        st.write(
-        f"Age: {st.session_state['age']}"
-        )
+            st.write(
+            f"Age: {st.session_state['age']}"
+            )
 
-        st.write(
-            f"Monthly Income: ₹{st.session_state['monthly_income']:,.0f}"
-        )
+            st.write(
+                f"Monthly Income: ₹{st.session_state['monthly_income']:,.0f}"
+            )
 
-        st.write(
-            f"Debt Ratio: {st.session_state['debt_ratio']}"
-        )
+            st.write(
+                f"Debt Ratio: {st.session_state['debt_ratio']}"
+            )
 
-        st.write(
-            f"Total Late Payments: {st.session_state['total_late_payments']}"
-        )
+            st.write(
+                f"Total Late Payments: {st.session_state['total_late_payments']}"
+            )
 
-        st.divider()
-        st.subheader("Key Risk Drivers")
-        for factor in st.session_state["risk_factor"]:
-            st.warning(factor)
-   
-        st.divider()
-        st.subheader("💡 Recommendation")
-        st.info(
-            st.session_state["recommendation"]
-        )
+        with col2:
+            st.subheader("Key Risk Drivers")
+            if st.session_state['probability'] <= 0.2:
+                st.info("No such risk involved")
+            else:
+                for factor in st.session_state["risk_factor"]:
+                    st.warning(factor)
+        
+        with col3:
+            st.subheader("💡 Recommendation")
+            st.info(
+                st.session_state["recommendation"]
+            )
 
         st.divider()
         st.subheader("📝 Executive Narrative")
