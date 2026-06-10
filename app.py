@@ -36,7 +36,7 @@ with st.sidebar:
     )
 
 st.set_page_config(
-    page_title="Credit Risk Intelligence Plateform",
+    page_title="Credit Risk Intelligence Platform",
     page_icon="🏦",
     layout="wide"
 )
@@ -48,7 +48,7 @@ model = joblib.load("models/loan_default_xgb.pkl")
 
 # Layout
 
-st.title("🏦 Credit Risk Intelligence Plateform")
+st.title("🏦 Credit Risk Intelligence Platform")
 st.markdown("""
             AI - Powered Loan Default Prediction using XGBoost
 """)
